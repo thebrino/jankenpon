@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>janken pon!</title>
+    <title>jankenpon!!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="game" class="container">
         <h1>
-            janken pon!
+            jankenpon!!
         </h1>
         <div class="bloco">
-            <div class="label bg-green">user</div>
-            <div class="label bg-red">pc</div>
+            <div class="label bg-vc">vc</div>
+            <div class="label bg-pc">pc</div>
             <div id="contador" class="placar">
                 0:0
             </div>
@@ -26,7 +26,7 @@
             <div id="pc" class="reserve">
             </div>
         </div>
-        <h2>escolha seu movimento >:(</h2>
+        <h2>escolha (ﾉ´ з `)ノ</h2> 
         <div class="buttons">
             <label>
                 <input type="radio" onclick="reset()" name="play" value="rock" checked>
@@ -46,13 +46,14 @@
         </div>
     </div>
     <div id="winner" class="container end-screen none">
-        <span>🏆</span>
+        <span>＼(＾▽＾)／</span>
         <h3>ganhou c:</h3>
-        <button onclick="newGame()">jogar novamente</button>
+        <button class="btn-pa" onclick="newGame()">jogar novamente</button>
     </div>
     <div id="loser" class="container end-screen none">
+        <span>o(TヘTo)</span>
         <h3>perdeu :c</h3>
-        <button onclick="newGame()">jogar novamente</button>
+        <button class="btn-pa" onclick="newGame()">jogar novamente</button>
     </div>
     <script src="script.js"></script>
 </body>

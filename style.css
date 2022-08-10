@@ -21,10 +21,6 @@ html, body {
     --pink: #d36690;
     --white: #fff;
     --dark: #333333;
-    --green: #11780f;
-    --red: #d2300c;
-    --grey: #d9d9d9;
-    --dark-transparent: rgba(255, 255, 255, .5);
 }
 
 body {
@@ -32,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'franxurter_totallymedium', 'Poppins', sans-serif;
-    background-color: var(--dark);
+    background-color: #66d3cd;
 }
 
 .container {
@@ -40,7 +36,6 @@ body {
     width: 360px;
     min-height: 650px;
     background: var(--white);
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.171);
     border-radius: 30px;
 }
 
@@ -53,18 +48,29 @@ body {
     background-color: var(--pink);
 }
 
+.end-screen {
+    height: 660px;
+}
+
 .end-screen h3 {
     font-size: 2.2rem;
+    letter-spacing: 2px;
+    padding: 10px;
 }
 
 .end-screen button {
+    background-color: var(--white);
     padding: 10px;
-    width: 80%;
-    border-radius: 10px;
+    width: 55%;
+    border-radius: 20px;
     border: none;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-family: 'franxurter_totallymedium', 'Poppins', sans-serif;
     cursor: pointer;
+}
+
+.btn-pa {
+    color: var(--pink);
 }
 
 .end-screen span {
@@ -81,15 +87,14 @@ body {
 h1 {
     background-color: var(--pink);
     color: var(--white);
-    /* color: transparent;
-    -webkit-text-stroke-width: 0.01rem;
-    -webkit-text-stroke-color: rgb(255, 255, 255); */
     padding: 15px 0;
     font-size: 2.5rem;
     letter-spacing: 2px;
     text-align: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .bloco {
@@ -128,24 +133,20 @@ h1 {
     position: absolute;
 }
 
-.bg-green {
+.bg-vc {
     color: var(--dark);
     border: 2px solid var(--pink);
     background-color: var(--white);
     left: 16%;
+    font-size: 1.2rem;
 }
 
-.bg-red {
+.bg-pc {
     color: var(--dark);
     border: 2px solid var(--pink);
     background-color: var(--white);
     right: 16%;
-}
-
-.bg-grey {
-    display: flex;
-    align-items: center;
-    height: 180px;
+    font-size: 1.2rem;
 }
 
 .selected-image div {
@@ -210,7 +211,7 @@ label {
 }
 
 .btn-play, .btn-play:disabled:hover {
-    width: 90%;
+    width: 50%;
     padding: 10px;
     border: 2px solid var(--pink);
     border-radius: 20px;
@@ -229,3 +230,17 @@ label {
     background-color: var(--pink);
     color: var(--white);
 }
+
+
+
+/* @media (max-width: 425px) {
+    .container {
+      width: 90%;
+      text-align: center;
+    }
+  
+    body {
+      flex-direction: column;
+      background-size: 375px 375px;
+    }
+  }   */

@@ -8,8 +8,20 @@ const contador = document.getElementById("contador")
 const winner = document.getElementById("winner")
 const loser = document.getElementById("loser")
 
-const audioWin = new Audio("assets/sounds/winning.wav")
-const audioLose = new Audio("assets/sounds/losing.wav")
+// const audioWin = new Audio({
+//     loop: true,
+//     volume: 1,
+//     src: ['assets/sounds/win.mp3']
+// })
+
+// const audioLose = new Audio({
+//     loop: true,
+//     volume: 1,
+//     src: ['assets/sounds/lose.mp3']
+// })
+
+const audioWin = new Audio("assets/sounds/win.mp3");
+const audioLose = new Audio("assets/sounds/lose.mp3")
 
 var player1 = ""
 var player2 = ""
@@ -49,11 +61,13 @@ function analyze() {
     if(win == 0){
 
     } else if (win > 0){
-        contUser = contUser + 1
+        contUser = contUser + 1;
         audioWin.play()
+        audioWin.volume = 0.1
     } else {
         contPc = contPc + 1
         audioLose.play()
+        audioLose.volume = 0.1
     }
 
     contador.innerHTML = contUser + ":" + contPc
